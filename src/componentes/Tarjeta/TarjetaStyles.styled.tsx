@@ -4,6 +4,9 @@ const fontTitillium =" 'Titillium Web',sans-serif;`"
 export const ContainerTarjetaHeader = styled.div`
     text-align: center;
     background-color: #353535;
+    @media only screen and (max-width: 600px) {
+        height: 24px;
+    }
 `
 
 export const TextTarjetaHeader = styled.a`
@@ -15,4 +18,7 @@ export const TextTarjetaHeader = styled.a`
     font-weight: 400;
     line-height: 18px;
     text-decoration: none;
+    @media only screen and (max-width: 600px) {
+        font-size: 10px;
+    }
 `
