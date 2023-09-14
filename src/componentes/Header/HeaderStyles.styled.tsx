@@ -36,7 +36,6 @@ export const ContentHeaderCategory = styled.div`
     
 `
 export const ContainerHeader = styled.div`
-    max-height: 88px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
