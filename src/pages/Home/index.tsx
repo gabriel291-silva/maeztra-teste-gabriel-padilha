@@ -2,6 +2,7 @@ import BannerHero from "../../componentes/BannerHero"
 import HeaderContainer from "../../componentes/Header/headerContainer"
 import HeaderMobileContainer from "../../componentes/HeaderMobile/headerMobileContainer";
 import TarjetaHeader from "../../componentes/Tarjeta"
+import TarjetaInformation from "../../componentes/TarjetaInformations";
 
 function HomePage(){
     const isMobile = window.innerWidth <= 768;
@@ -14,6 +15,7 @@ function HomePage(){
                 <HeaderContainer/>
              )}
             <BannerHero/>
+            <TarjetaInformation/>
         </div>
     )
 }

@@ -3,7 +3,6 @@ import { TextTarjetaHeader,ContainerTarjetaHeader } from "./TarjetaStyles.styled
 
 function TarjetaHeader(){
     const Tarjeta = headerData?.headerTarjeta;
-    console.log(Tarjeta)
     return(
         <>
         <ContainerTarjetaHeader>

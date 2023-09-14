@@ -3,6 +3,6 @@
     margin: 0 auto;
 }
 .slick-dots{
-    bottom: 0px;
+    bottom: 0px !important;
 
 }
