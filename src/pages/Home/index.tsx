@@ -1,6 +1,7 @@
+import BannerFooter from "../../componentes/BannerFooter";
 import BannerHero from "../../componentes/BannerHero"
 import HeaderContainer from "../../componentes/Header/headerContainer"
-import HeaderMobileContainer from "../../componentes/HeaderMobile/headerMobileContainer";
+import HeaderMobileContainer from "../../componentes/HeaderMobile/HeaderMobileContainer";
 import Shelf from "../../componentes/Shelf";
 import TarjetaHeader from "../../componentes/Tarjeta"
 import TarjetaInformation from "../../componentes/TarjetaInformations";
@@ -20,6 +21,7 @@ function HomePage(){
             <TarjetaInformation/>
             <TarjetaPartners/>
             <Shelf/>
+            <BannerFooter/>
         </div>
     )
 }
