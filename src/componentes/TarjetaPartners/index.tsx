@@ -3,7 +3,7 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { TarjetaPartnersCardType } from "./types";
-import { TarjetaPartnersContainer, TarjetaTitle, TarjetaTitleContent } from "./TarjetaPartnersStyles.styled";
+import { TarjetaPartnersContainer, TarjetaPartnersSlideContent, TarjetaTitle, TarjetaTitleContent } from "./TarjetaPartnersStyles.styled";
 import TarjetaPartnersCard from "./TarjetaPartnersCard";
 import { TarjetaPartnersData } from "../../data/tarjetaPartnersData";
 
@@ -38,7 +38,7 @@ function TarjetaPartners(){
                 Por que comprar na Maeztra?
                 </TarjetaTitle>
             </TarjetaTitleContent>
-          <div>
+          <TarjetaPartnersSlideContent>
           {
             isMobile ?
             <Slider  {...settingsMob}>
@@ -61,7 +61,7 @@ function TarjetaPartners(){
                     }
             </Slider>
                 }
-          </div>
+          </TarjetaPartnersSlideContent>
         </TarjetaPartnersContainer>
     )
 }

@@ -28,7 +28,6 @@ function TarjetaInformation(){
         slidesToScroll: 1,
         className:"tarjetaInformation",
       };
-      console.log(Data)
     return(
         <TarjetaContainer>
             <TarjetaTitleContent>

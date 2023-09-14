@@ -43,3 +43,7 @@ export const CardtarjetaPartner = styled.div`
     justify-content: center;
 
 `
+export const TarjetaPartnersSlideContent = styled.div`
+    padding: 0 16px;
+
+`
