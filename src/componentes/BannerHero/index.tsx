@@ -3,8 +3,19 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './styles.css'; 
-import { ContainerBannerHero, ContentBannerHero } from "./BannerHeroStyles.styled";
+import { bannerHeroHomeData } from "../../data/bannerHeroHomeData";
+import { 
+  ContainerBannerHero, 
+  ContentBannerHero,
+  TitleCardBannerHero, 
+  CardBannerHero,
+  SubTitleCardBannerHero,
+  ButtonCardBannerHero 
+} from "./BannerHeroStyles.styled";
+
+
  function BannerHero() {
+  const bannersData = bannerHeroHomeData.Cards
   var settings = {
     dots: true,
     infinite: true,
@@ -17,16 +28,17 @@ import { ContainerBannerHero, ContentBannerHero } from "./BannerHeroStyles.style
   return (
     <ContainerBannerHero>
     <Slider {...settings}>
-        <ContentBannerHero>
-            <span>teste 1</span>
-            <span></span>
-            <button></button>
+      {bannersData?.map((card)=>{
+        return(
+          <ContentBannerHero>
+          <CardBannerHero>
+            <TitleCardBannerHero>{card.title}</TitleCardBannerHero>
+              <SubTitleCardBannerHero>{card.subtitle}</SubTitleCardBannerHero>
+              <ButtonCardBannerHero>{card.textButton}</ButtonCardBannerHero>
+          </CardBannerHero>
         </ContentBannerHero>
-        <ContentBannerHero>
-            <span> teste 2</span>
-            <span></span>
-            <button></button>
-        </ContentBannerHero>
+        )
+      })}
     </Slider>
     </ContainerBannerHero>
     
