@@ -28,12 +28,18 @@ export const ContainerCategoryes = styled.div`
     @media only screen and (max-width: 600px) {
         flex-direction: column;
         width: 100%;
+        gap: 17px;
     }
 `
 export const CategoriesContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 25px;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        max-width: 90%;
+        padding: 0 16px;
+    }
 `
 export const CategoryTitle = styled.span`
     color: var(--color-2-500, #353535);
@@ -42,6 +48,13 @@ export const CategoryTitle = styled.span`
     font-style: normal;
     font-weight: 700;
     line-height: 18px;
+    @media only screen and (max-width: 600px) {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+    }
 `
 export const SubCategoryTitle = styled.span`
 color: var(--color-2-900, #000);

@@ -11,7 +11,7 @@ function FooterCategory({title,subcategories}:FooterCategoryItemType){
             {
                 isMobile ? 
                 <>
-                <CategoryTitle onClick={()=>setOpenCategoryMobile(!openCategoryMobile)}>{title} {openCategoryMobile? "-" : "+"}</CategoryTitle>
+                <CategoryTitle onClick={()=>setOpenCategoryMobile(!openCategoryMobile)}>{title} <div>{openCategoryMobile ? "-":"+"}</div></CategoryTitle>
                             { openCategoryMobile ?
                                 subcategories?.map((item:FooterSubCategoryItemType,key:any)=>{
                                     return(
