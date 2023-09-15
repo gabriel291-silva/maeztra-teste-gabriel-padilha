@@ -1,5 +1,6 @@
 import BannerFooter from "../../componentes/BannerFooter";
 import BannerHero from "../../componentes/BannerHero"
+import { FooterContainer } from "../../componentes/Footer/FooterContainer";
 import HeaderContainer from "../../componentes/Header/headerContainer"
 import HeaderMobileContainer from "../../componentes/HeaderMobile/HeaderMobileContainer";
 import NewsLetter from "../../componentes/NewsLetter";
@@ -24,6 +25,7 @@ function HomePage(){
             <Shelf/>
             <BannerFooter/>
             <NewsLetter/>
+            <FooterContainer/>
         </div>
     )
 }

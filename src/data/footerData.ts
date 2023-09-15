@@ -12,16 +12,16 @@ export const FooterData = {
             "title":"Informações",
             "subcategories":[
                 {
-                    "totitulosubcategory":"Quem Somos"
+                    "tititulosubcategory":"Quem Somos"
                 },
                 {
-                    "totitulosubcategory":"Prazo de Envio"
+                    "tititulosubcategory":"Prazo de Envio"
                 },
                 {
-                    "totitulosubcategory":"Trocas e Devoluções"
+                    "tititulosubcategory":"Trocas e Devoluções"
                 },
                 {
-                    "totitulosubcategory":"Promoções e Cupons"
+                    "tititulosubcategory":"Promoções e Cupons"
                 }
             ]
         },
@@ -29,13 +29,13 @@ export const FooterData = {
             "title":"Minha Conta",
             "subcategories":[
                 {
-                    "totitulosubcategory":"Minha Conta"
+                    "tititulosubcategory":"Minha Conta"
                 },
                 {
-                    "totitulosubcategory":"Meus Pedidos"
+                    "tititulosubcategory":"Meus Pedidos"
                 },
                 {
-                    "totitulosubcategory":"Cadastre-se"
+                    "tititulosubcategory":"Cadastre-se"
                 }
             ]
         },
@@ -43,10 +43,10 @@ export const FooterData = {
             "title":"Onde nos Encontrar",
             "subcategories":[
                 {
-                    "totitulosubcategory":"Lojas"
+                    "tititulosubcategory":"Lojas"
                 },
                 {
-                    "totitulosubcategory":"Endereço"
+                    "tititulosubcategory":"Endereço"
                 },
             ]
         }
@@ -69,7 +69,7 @@ export const FooterData = {
 
         }
     ],
-    'pagemento':[
+    'pagamento':[
         {
             "icon":iconVisa
         },

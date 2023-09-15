@@ -2,7 +2,6 @@ import { VariantItem, VariantsContainer } from "./ProductCard.styled"
 import { ProductVariantType, ProductVariantesType } from "./types"
 
 function ProductVariant({variants}:ProductVariantesType){
-    console.log(variants)
     return(
         <VariantsContainer>
             {variants?.map((item:ProductVariantType,key:any)=>{
