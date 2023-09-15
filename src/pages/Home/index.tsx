@@ -4,6 +4,7 @@ import { FooterContainer } from "../../componentes/Footer/FooterContainer";
 import HeaderContainer from "../../componentes/Header/headerContainer"
 import HeaderMobileContainer from "../../componentes/HeaderMobile/HeaderMobileContainer";
 import NewsLetter from "../../componentes/NewsLetter";
+import PopUpContainer from "../../componentes/PopUp/PopUpContainer";
 import Shelf from "../../componentes/Shelf";
 import TarjetaHeader from "../../componentes/Tarjeta"
 import TarjetaInformation from "../../componentes/TarjetaInformations";
@@ -13,6 +14,7 @@ function HomePage(){
     const isMobile = window.innerWidth <= 768;
     return(
         <div>
+            <PopUpContainer/>
             <TarjetaHeader/>
             {isMobile ? (
                 <HeaderMobileContainer/>
