@@ -1,6 +1,11 @@
-function PopUpImage(){
+import { PopUpImageContainer,PopUpImageItem } from "./PopUp.styled"
+import { PopUpImageType } from "./type"
+
+function PopUpImage({popUpImage}:PopUpImageType){
     return(
-        <div>PopUpImage</div>
+        <PopUpImageContainer>
+            <PopUpImageItem src={popUpImage} alt="" />
+        </PopUpImageContainer> 
     )
 }
 

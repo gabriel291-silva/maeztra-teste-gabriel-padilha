@@ -1,6 +1,8 @@
+import { PopUpInput } from "./PopUp.styled"
+
 function PopUpForm(){
     return(
-        <div>PopUpForm</div>
+        <PopUpInput type="text" placeholder="Digite seu e-mail" />
     )
 }
 

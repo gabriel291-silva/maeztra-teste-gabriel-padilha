@@ -1,22 +1,25 @@
 import { PopUp } from "."
 import { PopUpData } from "../../data/popUpData"
+import {useState } from "react"
+import { PopUpCloseBtn, PopUpContent, PopUpConteudoContainer } from "./PopUp.styled"
 
 function PopUpContainer(){
-    const data = PopUpData
-    console.log(data)
-    
+    const {popUpImage, popUpIcon, popUpTitle,popUpText,popUpTextBold, popUpTextButton} = PopUpData
+    const [openWrapper,setOpenWrapper] = useState(false)
+
     return(
         <div>
-            <div>
-                <PopUp.Image/>
-                <div>
-                    <PopUp.text/>
+            <PopUpContent $open={openWrapper}>
+                <PopUpCloseBtn onClick={()=>setOpenWrapper(!openWrapper)}>fechar</PopUpCloseBtn>
+                <PopUp.Image popUpImage={popUpImage}/>
+                <PopUpConteudoContainer>
+                    <img src={popUpIcon} alt="" />
+                    <PopUp.text popUpTitle={popUpTitle} popUpText={popUpText} popUpTextBold={popUpTextBold}/>
                     <PopUp.form/>
-                    <PopUp.button/>
-                    
-                </div>
-            </div>
-            <PopUp.wrapper/>
+                    <PopUp.button popUpTextButton={popUpTextButton}/>
+                </PopUpConteudoContainer>
+            </PopUpContent>
+            <PopUp.wrapper openWrapper={openWrapper} setOpenWrapper={setOpenWrapper}/>
         </div>
     )
 }

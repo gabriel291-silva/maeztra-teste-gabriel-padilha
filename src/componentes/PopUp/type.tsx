@@ -8,22 +8,14 @@ export interface PopUpImageType{
 export interface PopUpIcon{
     popUpIcon:string
 }
-
-export interface PopUpText{
-    popUpText:string
-}
-export interface PopUpTitle{
-    popUpTitle:string
-}
-export interface PopUpTextBold{
+export interface PopUpTextType{
+    popUpText:string,
+    popUpTitle:string,
     popUpTextBold:string
 }
-
 export interface PopUpData{
     popUpTextButton:PopUpButtonTextType,
     popUpImage:PopUpImageType
     popUpIcon:PopUpIcon
-    popUpText:PopUpText
-    popUpTitle:PopUpTitle
-    popUpTextBold:PopUpTextBold
+    popUpText:PopUpTextType
 }
