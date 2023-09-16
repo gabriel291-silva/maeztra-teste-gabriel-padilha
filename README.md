@@ -20,5 +20,5 @@ componentes do projeto que compoem a pagina do layout :
 
 # Rodar o projeto 
 - na raiz do projeto rodar :  npm install
-- para rodar em desenvolvimento, na raiz do projeto execultar : npm run dev 
+- para rodar em desenvolvimento, na raiz do projeto execultar : npm run start 
 - para buildar o projeto rodar na riz do projeto o comando : npm run build 
