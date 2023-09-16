@@ -4,7 +4,6 @@ const fontTitillium =" 'Titillium Web',sans-serif;`"
 export const ContainerFooter = styled.div`
     display: flex;
     flex-direction: column;
-    padding: 0 16px;
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;

@@ -2,7 +2,26 @@
     max-width: 70%;
     margin: 0 auto;
 }
-.slick-dots{
-    bottom: 0px !important;
-
+.bannerHeroDots {
+    bottom: 10px !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1; 
+    border: solid 1px #FAA500 !important;
+    background: none;
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    color: transparent;
+    background-color: #FAA500;
+    color: transparent !important;
+}
+.slick-dots li button:before {
+    opacity: 1; 
+    border: solid 1px #FAA500 !important;
+    background: none;
+    border-radius: 50%;
+    width: 10px !important;
+    height: 10px !important;
+    color: transparent !important;
 }

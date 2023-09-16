@@ -12,10 +12,13 @@ import {
   SubTitleCardBannerHero,
   ButtonCardBannerHero 
 } from "./BannerHeroStyles.styled";
+import ArrowNext from "../ArrowSlider/ArrowNext";
+import ArrowPrev from "../ArrowSlider/ArrowPrev";
 
 
  function BannerHero() {
   const bannersData = bannerHeroHomeData.Cards
+
   var settings = {
     dots: true,
     infinite: true,
@@ -23,7 +26,10 @@ import {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows:true,
-    className:"bannerHero"
+    className:"bannerHero",
+    dotsClass:"bannerHeroDots slick-dots",
+    nextArrow: <ArrowNext />,
+    prevArrow: <ArrowPrev />
   };
   return (
     <ContainerBannerHero>

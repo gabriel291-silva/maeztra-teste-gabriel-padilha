@@ -1,0 +1,6 @@
+.arrowPrevCustom{
+    z-index: 1;
+}
+.slick-next:before, .slick-prev:before {
+    display: none;
+}

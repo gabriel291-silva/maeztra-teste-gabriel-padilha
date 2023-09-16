@@ -46,7 +46,7 @@ export const CardtarjetaInfor = styled.div`
 export const TitleTarjetaInfor = styled.span`
     color: var(--color-2-500, #353535);
     font-family: ${fontTitillium};
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -55,7 +55,7 @@ export const TitleTarjetaInfor = styled.span`
 export const TextTarjetaInfor = styled.span`
 color: var(--color-2-900, #000);
     font-family: ${fontTitillium};
-    font-size: 12px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;

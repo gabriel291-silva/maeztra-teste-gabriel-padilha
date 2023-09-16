@@ -2,22 +2,27 @@ import { ProductsData } from "../../data/productsData"
 import ProductCardContainer from "../Product/ProductCardContainer"
 import { ProductDataType } from "../Product/types"
 import Slider from "react-slick"
+import './styles.css'; 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ShelfContainer,ShelfTitleContent,ShelfTitle } from "./Shelf.styled";
+import ArrowNext from "../ArrowSlider/ArrowNext";
+import ArrowPrev from "../ArrowSlider/ArrowPrev";
 
 function Shelf(){
     const data = ProductsData.Products
     const isMobile = window.innerWidth <= 768;
 
+
     var settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        arrows:true,
-        className:"Shelf"
+        className:"Shelf",
+        nextArrow: <ArrowNext />,
+        prevArrow: <ArrowPrev />
       };
       var settingsMob = {
         dots: false,

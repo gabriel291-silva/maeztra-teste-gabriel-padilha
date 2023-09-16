@@ -5,7 +5,7 @@ export const ContainerProductCars = styled.div`
     max-width: 308px;
 `
 export const ProductCarImage = styled.img`
-    max-width: 308px;
+    max-width: 254px;
 `
 export const ProductCardPrice = styled.div`
     color: var(--color-2-500, #353535);

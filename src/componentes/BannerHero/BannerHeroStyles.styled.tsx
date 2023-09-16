@@ -32,10 +32,11 @@ export const ContentBannerHero = styled.div`
 `
 
 export const CardBannerHero = styled.div`
-    width: 100%;
+   width: auto;
     display: flex;
     flex-direction: column;
     padding: 0 16px;
+    margin: 0 auto;
 
 `
 

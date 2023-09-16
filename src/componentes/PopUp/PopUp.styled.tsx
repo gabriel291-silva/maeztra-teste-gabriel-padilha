@@ -22,7 +22,7 @@ export const PopUpContent = styled.div<{ $open?:boolean; }>`
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 379px;
+    top: 5%;
     height: 100%;
     max-height: 529px;
     display: ${props => props.$open ? "flex" : "none"};
@@ -130,4 +130,5 @@ position: absolute;
     font-weight: 400;
     line-height: 20px;
     text-transform: uppercase;
+    cursor: pointer;
 `
