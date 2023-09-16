@@ -2,7 +2,8 @@ import styled from "styled-components";
 const fontTitillium =" 'Titillium Web',sans-serif;`"
 
 export const ContainerProductCars = styled.div`
-    max-width: 308px;
+        max-width: 254px;
+    margin: 0 auto;
 `
 export const ProductCarImage = styled.img`
     max-width: 254px;
